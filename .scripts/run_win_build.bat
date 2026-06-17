@@ -40,8 +40,18 @@ powershell -NoProfile -ExecutionPolicy unrestricted -Command "(Get-Content pixi.
 :: Git on Windows needs to run post link scripts to properly set up SSL certificates
 pixi config set --global run-post-link-scripts insecure
 if !errorlevel! neq 0 exit /b !errorlevel!
-pixi install
-if !errorlevel! neq 0 exit /b !errorlevel!
+set "PIXI_INSTALL_ATTEMPT=1"
+:pixi_install_retry
+echo Running pixi install attempt !PIXI_INSTALL_ATTEMPT!
+pixi install --concurrent-downloads 8
+if !errorlevel! equ 0 goto pixi_install_done
+set "PIXI_INSTALL_ERROR=!errorlevel!"
+if !PIXI_INSTALL_ATTEMPT! geq 3 exit /b !PIXI_INSTALL_ERROR!
+set /a PIXI_INSTALL_ATTEMPT+=1
+echo pixi install failed with !PIXI_INSTALL_ERROR!, retrying...
+timeout /t 30 /nobreak
+goto pixi_install_retry
+:pixi_install_done
 pixi list
 if !errorlevel! neq 0 exit /b !errorlevel!
 set "ACTIVATE_PIXI=%TMP%\pixi-activate-%RANDOM%.bat"
