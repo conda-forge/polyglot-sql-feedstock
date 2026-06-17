@@ -1,0 +1,12 @@
+conda_build_tool: rattler-build
+github:
+  branch_name: main
+  tooling_branch_name: main
+conda_build:
+  error_overlinking: true
+conda_forge_output_validation: true
+bot:
+  automerge: version
+  check_solvable: true
+  inspection: hint-all
+conda_install_tool: pixi
