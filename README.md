@@ -307,4 +307,5 @@ Feedstock Maintainers
 =====================
 
 * [@geoHeil](https://github.com/geoHeil/)
+* [@tobilg](https://github.com/tobilg/)
 
