@@ -5,7 +5,7 @@
 
 [workspace]
 name = "polyglot-sql-feedstock"
-version = "2026.9.21"  # conda-smithy version used to generate this file
+version = "2026.9.23"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/polyglot-sql-feedstock"
 authors = ["@conda-forge/polyglot-sql"]
 channels = ["conda-forge"]
@@ -82,6 +82,15 @@ description = "Debug polyglot-sql-feedstock with variant linux_64_channel_source
 [feature.build.tasks."inspect-linux_64_channel_sourcesconda-forgepython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_channel_sourcesconda-forgepython3.14.____cp314.yaml"
 description = "List contents of polyglot-sql-feedstock packages built for variant linux_64_channel_sourcesconda-forgepython3.14.____cp314"
+[feature.build.tasks."build-linux_64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform linux-64"
+description = "Build polyglot-sql-feedstock with variant linux_64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."debug-linux_64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform linux-64"
+description = "Debug polyglot-sql-feedstock with variant linux_64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml"
+description = "List contents of polyglot-sql-feedstock packages built for variant linux_64_channel_sourcesconda-forgepython3.14.____cp314t"
 [feature.build.tasks."build-linux_aarch64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315.yaml --target-platform linux-aarch64"
 description = "Build polyglot-sql-feedstock with variant linux_aarch64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315 directly (without setup scripts)"
@@ -127,6 +136,15 @@ description = "Debug polyglot-sql-feedstock with variant linux_aarch64_channel_s
 [feature.build.tasks."inspect-linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314.yaml"
 description = "List contents of polyglot-sql-feedstock packages built for variant linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314"
+[feature.build.tasks."build-linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform linux-aarch64"
+description = "Build polyglot-sql-feedstock with variant linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."debug-linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform linux-aarch64"
+description = "Debug polyglot-sql-feedstock with variant linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314t.yaml"
+description = "List contents of polyglot-sql-feedstock packages built for variant linux_aarch64_channel_sourcesconda-forgepython3.14.____cp314t"
 [feature.build.tasks."build-osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315.yaml --target-platform osx-64"
 description = "Build polyglot-sql-feedstock with variant osx_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315 directly (without setup scripts)"
@@ -172,6 +190,15 @@ description = "Debug polyglot-sql-feedstock with variant osx_64_channel_sourcesc
 [feature.build.tasks."inspect-osx_64_channel_sourcesconda-forgepython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_channel_sourcesconda-forgepython3.14.____cp314.yaml"
 description = "List contents of polyglot-sql-feedstock packages built for variant osx_64_channel_sourcesconda-forgepython3.14.____cp314"
+[feature.build.tasks."build-osx_64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform osx-64"
+description = "Build polyglot-sql-feedstock with variant osx_64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."debug-osx_64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform osx-64"
+description = "Debug polyglot-sql-feedstock with variant osx_64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml"
+description = "List contents of polyglot-sql-feedstock packages built for variant osx_64_channel_sourcesconda-forgepython3.14.____cp314t"
 [feature.build.tasks."build-osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315.yaml --target-platform osx-arm64"
 description = "Build polyglot-sql-feedstock with variant osx_arm64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315 directly (without setup scripts)"
@@ -217,6 +244,15 @@ description = "Debug polyglot-sql-feedstock with variant osx_arm64_channel_sourc
 [feature.build.tasks."inspect-osx_arm64_channel_sourcesconda-forgepython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_channel_sourcesconda-forgepython3.14.____cp314.yaml"
 description = "List contents of polyglot-sql-feedstock packages built for variant osx_arm64_channel_sourcesconda-forgepython3.14.____cp314"
+[feature.build.tasks."build-osx_arm64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform osx-arm64"
+description = "Build polyglot-sql-feedstock with variant osx_arm64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."debug-osx_arm64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/osx_arm64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform osx-arm64"
+description = "Debug polyglot-sql-feedstock with variant osx_arm64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."inspect-osx_arm64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_channel_sourcesconda-forgepython3.14.____cp314t.yaml"
+description = "List contents of polyglot-sql-feedstock packages built for variant osx_arm64_channel_sourcesconda-forgepython3.14.____cp314t"
 [feature.build.tasks."build-win_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315.yaml --target-platform win-64"
 description = "Build polyglot-sql-feedstock with variant win_64_channel_sourcesconda-forgeconda-forgelabelpython_rcpython3.15.____cp315 directly (without setup scripts)"
@@ -262,6 +298,15 @@ description = "Debug polyglot-sql-feedstock with variant win_64_channel_sourcesc
 [feature.build.tasks."inspect-win_64_channel_sourcesconda-forgepython3.14.____cp314"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_channel_sourcesconda-forgepython3.14.____cp314.yaml"
 description = "List contents of polyglot-sql-feedstock packages built for variant win_64_channel_sourcesconda-forgepython3.14.____cp314"
+[feature.build.tasks."build-win_64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform win-64"
+description = "Build polyglot-sql-feedstock with variant win_64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."debug-win_64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/win_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml --target-platform win-64"
+description = "Debug polyglot-sql-feedstock with variant win_64_channel_sourcesconda-forgepython3.14.____cp314t directly (without setup scripts)"
+[feature.build.tasks."inspect-win_64_channel_sourcesconda-forgepython3.14.____cp314t"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_channel_sourcesconda-forgepython3.14.____cp314t.yaml"
+description = "List contents of polyglot-sql-feedstock packages built for variant win_64_channel_sourcesconda-forgepython3.14.____cp314t"
 
 [environments]
 build = ["build"]
