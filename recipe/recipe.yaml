@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.12.1"
+  version: "0.13.2"
 
 package:
   name: polyglot-sql
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/polyglot-sql/polyglot_sql-${{ version }}.tar.gz
-  sha256: 6065cc02f09b5fa1f88dd65a9d0133c84e493fd5809b542aa3cce706db1e063e
+  sha256: d4836c61b6955040646fc14d2e219f2b39c3f115efa7e626e5055279a5a39382
 
 build:
-  number: 1
+  number: 0
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
