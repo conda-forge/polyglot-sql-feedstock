@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.13.3"
+  version: "0.13.4"
 
 package:
   name: polyglot-sql
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/polyglot-sql/polyglot_sql-${{ version }}.tar.gz
-  sha256: 88b3e25e5a914e25f0bc9227d55df123cb1d00768675b415a985618367d33ac9
+  sha256: 1c0876bf8d802ff837b4b338aba56e5d398008cb0b0fb354e9e74acab8e0404a
 
 build:
   number: 0
